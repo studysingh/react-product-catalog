@@ -1,0 +1,12 @@
+.productPage {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}

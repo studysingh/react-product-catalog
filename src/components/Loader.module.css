@@ -1,0 +1,45 @@
+/* Loading.css */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Light overlay to indicate loading */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.spinner {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue color for the spinner */
+  border-radius: 50%;
+  width: 100px; /* Increase width */
+  height: 100px; /* Increase height */
+  animation: spin 1s linear infinite;
+}
+
+.par {
+  margin-top: 10px;
+  font-size: 1.5rem; /* Slightly larger font */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
