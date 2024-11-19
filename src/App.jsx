@@ -65,7 +65,7 @@ function App() {
 
   return (
     <CartProvider>
-      <Router>
+      <Router basename="/react-product-catalog">
         <Routes>
           <Route path="/" element={<ProductPage allProduct={allProduct} />} />
           <Route
